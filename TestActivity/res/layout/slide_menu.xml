@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/call_400_map"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:alpha="80"
+        android:background="#ff0000" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:text="400-155-1033"
+            android:textColor="#c27700"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/arr" />
+
+        <com.huangyezhaobiao.view.CircleImageView
+            android:id="@+id/civ_user"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/ic_launcher" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mypay"
+        android:layout_width="fill_parent"
+        android:layout_height="36dp"
+        android:alpha="80"
+        android:background="@drawable/orgselector" >
+
+        <ImageView
+            android:id="@+id/iv_yue"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_launcher"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            />
+        
+        <TextView
+            android:layout_toRightOf="@id/iv_yue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="我的余额"
+            android:textColor="#c27700"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+		
+        <ImageView
+            android:id="@+id/iv_refresh"
+            android:layout_width="10dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/arr" />
+	
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/iv_refresh"
+            android:text="203.7"
+            android:textColor="@color/red"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="30dp"
+            android:layout_height="wrap_content" >
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="30dp"
+        android:background="@color/gray" />
+
+    <RelativeLayout
+        android:id="@+id/myorder"
+        android:layout_width="fill_parent"
+        android:layout_height="36dp"
+        android:alpha="80"
+        android:background="@drawable/orgselector" >
+
+        <ImageView
+            android:id="@+id/iv_qiangdan"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_launcher"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            />
+        
+        <TextView
+            android:layout_toRightOf="@id/iv_qiangdan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="我的抢单"
+            android:textColor="#c27700"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/arr" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="60dp"
+        android:background="@color/gray" />
+
+    <RelativeLayout
+        android:id="@+id/help"
+        android:layout_width="fill_parent"
+        android:layout_height="36dp"
+        android:alpha="80"
+        android:background="@drawable/orgselector" >
+
+        <ImageView
+            android:id="@+id/iv_help"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_launcher"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            />
+        
+        <TextView
+            android:layout_toRightOf="@id/iv_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="帮助"
+            android:textColor="#c27700"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/arr" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="?android:attr/listDivider" />
+
+    <RelativeLayout
+        android:id="@+id/about"
+        android:layout_width="fill_parent"
+        android:layout_height="36dp"
+        android:alpha="80"
+        android:background="@drawable/orgselector" >
+
+        <ImageView
+            android:id="@+id/iv_about"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_launcher"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            />
+        
+        
+        <TextView
+            android:layout_toRightOf="@id/iv_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="关于"
+            android:textColor="#c27700"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/arr" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+       
+         >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+       android:layout_alignParentBottom="true"
+        >
+        <RelativeLayout
+            android:id="@+id/rl_exit"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退出"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            />
+        </RelativeLayout>
+        
+        <View
+            android:id="@+id/view"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/rl_exit"
+            android:background="@color/black"
+            />
+        <RelativeLayout
+            android:id="@+id/rl_unregister"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/view"
+            >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注销"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            />
+        </RelativeLayout>
+    </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <include layout="@layout/layout_backhead" />
+    <include
+        layout="@layout/layout_order_hint"
+        android:visibility="gone"
+        />
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+        android:layout_height="30dp"
+	    >
+
+	    <include
+	        android:layout_alignParentBottom="true"
+	        layout="@layout/layout_fragment_title_myorder" />
+
+	    <View
+	        android:id="@+id/line_fragment_title"
+	        android:layout_height="4dp"
+	        android:layout_width="3dp"
+	        android:background="@color/red"
+	        android:layout_alignParentBottom="true"
+	        />
+	 </RelativeLayout>
+	 <com.huangyezhaobiao.view.LazyViewPager
+	     android:id="@+id/viewpage_fragment"
+	     android:layout_width="fill_parent"
+	     android:layout_height="fill_parent"
+	     />
+	 
+</LinearLayout>

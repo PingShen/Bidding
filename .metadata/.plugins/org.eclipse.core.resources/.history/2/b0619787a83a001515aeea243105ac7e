@@ -1,0 +1,33 @@
+package com.huangyezhaobiao.vm;
+
+import com.huangye.commonlib.model.NetWorkModel;
+import com.huangye.commonlib.vm.SourceViewModel;
+import com.huangye.commonlib.vm.callback.NetWorkVMCallBack;
+import com.huangyezhaobiao.model.ValidateModel;
+
+import android.content.Context;
+
+public class ValidateViewModel extends SourceViewModel{
+
+	public ValidateViewModel(NetWorkVMCallBack callBack, Context context) {
+		super(callBack, context);
+	}
+
+	public void getCode(){
+		
+		((ValidateModel)t).getCode();
+	}
+	
+	public void validate(){
+		((ValidateModel)t).validate();
+	}
+	
+	
+	
+	@Override
+	protected NetWorkModel initListNetworkModel(Context context) {
+		
+		return new ValidateModel(this, context);
+	}
+
+}

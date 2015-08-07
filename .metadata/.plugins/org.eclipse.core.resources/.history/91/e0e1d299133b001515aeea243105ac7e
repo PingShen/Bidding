@@ -1,0 +1,76 @@
+package com.huangyezhaobiao.utils;
+
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.text.TextUtils;
+
+/**
+ * 用户的beanUtils
+ * @author shenzhixin
+ *
+ */
+public class UserUtils {
+	private static final String USER_SP_NAME = "user";
+	private static final String USER_ID = "userId";
+	private static final String COMPANY_NAME = "companyName";
+	private static final String USER_NAME = "companyName";
+	
+	public static String userId;
+	private static String companyName;
+	
+	public static String userName;
+	
+	public static void saveUser(Context context,String userId,String companyName,String userName){
+		SharedPreferences sp = context.getSharedPreferences(USER_SP_NAME, 0);//用userId，来区分
+		UserUtils.userId = userId;
+		UserUtils.companyName = companyName;
+		UserUtils.userName = userName;
+		sp.edit().putString(USER_ID, userId).commit();
+		sp.edit().putString(COMPANY_NAME, companyName).commit();
+		sp.edit().putString(USER_NAME, userName).commit();
+	}
+	
+	/**
+	 * 得到用户Id
+	 * @param context
+	 * @return
+	 */
+	public static String getUserId(Context context){
+		if(TextUtils.isEmpty(userId)){
+			userId = context.getSharedPreferences(USER_SP_NAME, 0).getString(USER_ID, "");
+		}
+		return userId;
+	}
+	
+	/**
+	 * 得到用户公司名
+	 * @param context
+	 * @return
+	 */
+	public static String getUserCompany(Context context){
+		if(TextUtils.isEmpty(companyName)){
+			companyName = context.getSharedPreferences(USER_SP_NAME, 0).getString("companyName", "");
+		}
+		return companyName;
+	}
+	
+	/**
+	 * 得到用户名
+	 * @param context
+	 * @return
+	 */
+	public static String getUserName(Context context){
+		if(TextUtils.isEmpty(companyName)){
+			companyName = context.getSharedPreferences(USER_SP_NAME, 0).getString("companyName", "");
+		}
+		return companyName;
+	}
+	
+	
+	public static void clearUserInfo(Context context){
+		context.getSharedPreferences(USER_SP_NAME, 0).edit().putString(USER_ID, "").commit();
+		context.getSharedPreferences(USER_SP_NAME, 0).edit().putString(COMPANY_NAME, "").commit();
+		userId = "";
+		companyName = "";
+	}
+}

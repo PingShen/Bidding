@@ -1,0 +1,43 @@
+1437284239130	Copy file
+1437285878753	Rename resource 'orderdetail_succese.png'
+1437285887571	Rename resource 'orderdetail_falure.png'
+1437286229660	Copy file
+1437288817848	Rename resource 'activity_orderdetail2.xml'
+1437288876661	Rename resource 'activity_orderdetail3.xml'
+1437288916605	Rename resource 'activity_orderdetail4.xml'
+1437288963445	Rename resource 'activity_orderdetail5.xml'
+1437288979638	Rename resource 't_orderdetail_falure.png'
+1437288990369	Rename resource 't_orderdetail_succese.png'
+1437362934968	Copy file
+1437362971774	Copy file
+1437386004342	Copy file
+1437386181321	Copy file
+1437389324984	Copy file
+1437389347095	Rename resource 't_login_shapexml'
+1437463640525	Move compilation unit
+1437463655963	Copy compilation unit
+1437463668190	Copy compilation unit
+1437463761355	Encapsulate field 'bean'
+1437475287671	Copy compilation unit
+1437475294151	Delete element
+1437475326613	Copy compilation unit
+1437478317723	Copy compilation unit
+1437483726512	Encapsulate field 'type'
+1437483731916	Encapsulate field 'detail'
+1437486456737	Delete elements
+1437486465586	Rename resource 'project.properties.mine'
+1437531917139	Move compilation unit
+1437543763774	Rename type 'commonInfoBean'
+1437544146860	Delete element
+1437544191342	Copy compilation unit
+1437544200805	Rename type 'SumplymentInfo'
+1437544240549	Copy compilation unit
+1437553227554	Copy file
+1437554795208	Delete element
+1437646538192	Delete elements
+1437811602880	Copy compilation unit
+1437827707076	Rename type 'PushToStorage'
+1437829147949	Encapsulate field 'cateId'
+1437829279613	Move compilation unit
+1437831300671	Copy file
+1437833905745	Delete element

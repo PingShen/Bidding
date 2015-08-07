@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/root1/Documents/workspaceNewAn/Zhaobiao/res/values/color.xml -->
+    <eat-comment/>
+    <color name="background">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="blue">#529AF4</color>
+    <color name="blue_color">#5f96f4</color>
+    <color name="bottombarground">#F9F9F9</color>
+    <color name="cancelbutton">#4e4e4e</color>
+    <color name="checkmorebackground">#F6F6F6</color>
+    <color name="checkmorelongline">#dddddd</color>
+    <color name="checkmoreshortline">#e9e9e9</color>
+    <color name="checkmoresoligthword">#c3c3c3</color>
+    <color name="counpline">#e2e2e2</color>
+    <color name="counpnum">#ddd</color>
+    <color name="counpnumaround">#dddddd</color>
+    <color name="couponinfotext">#8d8d8d</color>
+    <color name="couponselect">#eeeeee</color>
+    <color name="coupontext">#000000</color>
+    <color name="dark33">#55000000</color>
+    <color name="darkblue">#3e75ba</color>
+    <color name="darkgray">#A9A9A9</color>
+    <color name="darkgraylight">#eaeaea</color>
+    <color name="darkgreen">#659527</color>
+    <color name="darkred">#ba4835</color>
+    <color name="darkword">#45515F</color>
+    <color name="drakblack">#8d8d8d</color>
+    <color name="drakwhite">#45505F</color>
+    <color name="gray">#efefef</color>
+    <color name="grays">#dfdfdf</color>
+    <color name="green">#85c433</color>
+    <color name="hbg">#e4e4e4</color>
+    <color name="headbackground">#ff9200</color>
+    <color name="headbackground_selected">#fff</color>
+    <color name="headbacktext">#ffe1b8</color>
+    <color name="hidecolor">#00000000</color>
+    <color name="light_text_color">#808080</color>
+    <color name="lightbule">#69abff</color>
+    <color name="lightorange">#fff3e4</color>
+    <color name="lightorangedark">#ffe1bc</color>
+    <color name="lightorangetext">#f9b056</color>
+    <color name="ligthblueground">#F1F4F9</color>
+    <color name="ligthword">#758394</color>
+    <color name="line">#cad0d9</color>
+    <color name="lineblightbule2white">#cad0d9</color>
+    <color name="lineblue2lightbule">#3d7bca</color>
+    <color name="linedark">#bdbdbd</color>
+    <color name="main_title_text">#ff373737</color>
+    <color name="orangedark">#D67B00</color>
+    <color name="orderbottomline">#dedede</color>
+    <color name="orderline">#e8e8e8</color>
+    <color name="ordertext">#787878</color>
+    <color name="orgdark">#e9d38e</color>
+    <color name="orglight">#fff1c7</color>
+    <color name="phonecallbg">#e3efff</color>
+    <color name="poneblue">#69abff</color>
+    <color name="red">#F45E46</color>
+    <color name="reflection_default_from">#aa000000</color>
+    <color name="reflection_default_to">#00000000</color>
+    <color name="request_loading">#c0000000</color>
+    <color name="reveal_color">#1b000000</color>
+    <color name="segment_press">#c62930</color>
+    <color name="segment_unpress">#55ffffff</color>
+    <color name="share_bg">#f8f8f8</color>
+    <color name="share_progress_bg">#BB000000</color>
+    <color name="shortline">#e1e2e6</color>
+    <color name="soligthword">#B1B8C1</color>
+    <color name="splashbuluebg">#e2effa</color>
+    <color name="sss">#e0000000</color>
+    <color name="t_gray">#808080</color>
+    <color name="t_near_white">#70fafafa</color>
+    <color name="tab_red">#E12F37</color>
+    <color name="tab_red_light">#c62930</color>
+    <color name="tab_red_press">#c62930</color>
+    <color name="tabbackground">#f8f8fa</color>
+    <color name="tabtext">#787878</color>
+    <color name="tabtext_selected">#ff9200</color>
+    <color name="timeline_color">#a6a6a6</color>
+    <color name="tran_white">#ccffffff</color>
+    <color name="wb_dialog">#464B4F</color>
+    <color name="wb_quit_dialog_color">#495a6d</color>
+    <color name="wb_request_loading_color">#495a6d</color>
+    <color name="wb_request_loading_color_5.0">#B7B7B7</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_press">#f6f6f6</color>
+    <color name="whitedark">#d9d9d9</color>
+    <color name="windowbackground">#f6f6f6</color>
+    <declare-styleable name="CircleImageView"><attr format="dimension" name="border_width"/><attr format="color" name="border_color"/></declare-styleable>
+    <declare-styleable name="CustomTheme"><attr format="reference" name="gifViewStyle"/></declare-styleable>
+    <declare-styleable name="GifView"><attr format="reference" name="gif"/><attr format="boolean" name="paused"/></declare-styleable>
+    <declare-styleable name="PullToRefresh"><attr format="reference|color" name="ptrRefreshableViewBackground"/><attr format="reference|color" name="ptrHeaderBackground"/><attr format="reference|color" name="ptrHeaderTextColor"/><attr format="reference|color" name="ptrHeaderSubTextColor"/><attr name="ptrMode"><flag name="disabled" value="0x0"/><flag name="pullFromStart" value="0x1"/><flag name="pullFromEnd" value="0x2"/><flag name="both" value="0x3"/><flag name="manualOnly" value="0x4"/><flag name="pullDownFromTop" value="0x1"/><flag name="pullUpFromBottom" value="0x2"/></attr><attr format="reference|boolean" name="ptrShowIndicator"/><attr format="reference" name="ptrDrawable"/><attr format="reference" name="ptrDrawableStart"/><attr format="reference" name="ptrDrawableEnd"/><attr format="reference|boolean" name="ptrOverScroll"/><attr format="reference" name="ptrHeaderTextAppearance"/><attr format="reference" name="ptrSubHeaderTextAppearance"/><attr name="ptrAnimationStyle"><flag name="rotate" value="0x0"/><flag name="flip" value="0x1"/></attr><attr format="reference|boolean" name="ptrScrollingWhileRefreshingEnabled"/><attr format="reference|boolean" name="ptrListViewExtrasEnabled"/><attr format="reference|boolean" name="ptrRotateDrawableWhilePulling"/><attr format="reference|color" name="ptrAdapterViewBackground"/><attr format="reference" name="ptrDrawableTop"/><attr format="reference" name="ptrDrawableBottom"/></declare-styleable>
+    <declare-styleable name="SegmentControl"><attr format="dimension|reference" name="cornerRadius"/><attr format="color|reference" name="colors"/><attr format="string|reference" name="texts"/><attr name="android:textSize"/><attr format="enum" name="direction"><enum name="horizon" value="0"/><enum name="vertical" value="1"/></attr><attr format="dimension|reference" name="gaps"/><attr format="dimension|reference" name="horizonGap"/><attr format="dimension|reference" name="verticalGap"/><attr format="integer" name="selectedIndex"/></declare-styleable>
+    <declare-styleable name="SlidingMenu"><attr name="mode"><enum name="left" value="0"/><enum name="right" value="1"/></attr><attr format="reference" name="viewAbove"/><attr format="reference" name="viewBehind"/><attr format="dimension" name="behindOffset"/><attr format="dimension" name="behindWidth"/><attr format="float" name="behindScrollScale"/><attr name="touchModeAbove"><enum name="margin" value="0"/><enum name="fullscreen" value="1"/><enum name="none" value="2"/></attr><attr name="touchModeBehind"><enum name="margin" value="0"/><enum name="fullscreen" value="1"/><enum name="none" value="2"/></attr><attr format="reference" name="shadowDrawable"/><attr format="dimension" name="shadowWidth"/><attr format="boolean" name="fadeEnabled"/><attr format="float" name="fadeDegree"/><attr format="boolean" name="selectorEnabled"/><attr format="reference" name="selectorDrawable"/></declare-styleable>
+    <!-- From: file:/Users/root1/Documents/workspaceNewAn/Zhaobiao/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/Users/root1/Documents/workspaceNewAn/Zhaobiao/res/values/dimen.xml -->
+    <eat-comment/>
+    <dimen name="cornerradius">20dip</dimen>
+    <dimen name="driver_item_size">14dip</dimen>
+    <!-- From: file:/Users/root1/Documents/workspaceNewAn/Zhaobiao/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="guide_top_item1">89dp</dimen>
+    <!-- From: file:/Users/root1/Documents/workspaceNewAn/Zhaobiao/build/intermediates/exploded-aar/workspaceNewAn/library/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <!-- From: file:/Users/root1/Documents/workspaceNewAn/Zhaobiao/res/values/dimen.xml -->
+    <eat-comment/>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="loading_button_height">31dip</dimen>
+    <dimen name="loading_button_marginLeft">32dip</dimen>
+    <dimen name="loading_button_width">80dip</dimen>
+    <dimen name="loading_height">260dip</dimen>
+    <dimen name="loading_imageview_linearlayout_marginTop">20dip</dimen>
+    <dimen name="loading_imageview_marginLeft">20dip</dimen>
+    <dimen name="loading_linearlayout_marginTop">25dip</dimen>
+    <dimen name="loading_progressbar_marginTop">19.3dip</dimen>
+    <dimen name="loading_text_marginRight">13.3dip</dimen>
+    <dimen name="loading_textview_marginTop">16.7dip</dimen>
+    <dimen name="loading_width">276.7dip</dimen>
+    <dimen name="main_frame_item_normaltextsize">18sp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="public_loading_icon_height">53dip</dimen>
+    <dimen name="public_loading_icon_width">53dip</dimen>
+    <dimen name="set_img_widthandheight">14dip</dimen>
+    <dimen name="shadow_width">0dp</dimen>
+    <dimen name="share_cancel_btn_height">45dip</dimen>
+    <dimen name="share_cancel_btn_margin">5dip</dimen>
+    <dimen name="share_cancel_btn_textsize">16dip</dimen>
+    <dimen name="share_content_height">256dip</dimen>
+    <dimen name="share_gridview_horizontalSpacing">20dip</dimen>
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="wb_dialog_button_height">38.6dip</dimen>
+    <dimen name="wb_dialog_button_margin">12dip</dimen>
+    <dimen name="wb_dialog_button_size">16sp</dimen>
+    <dimen name="wb_dialog_content_margin">20dip</dimen>
+    <dimen name="wb_dialog_content_size">19sp</dimen>
+    <dimen name="wb_dialog_margin">33.3dip</dimen>
+    <dimen name="wb_dialog_resume_title_size">20sp</dimen>
+    <dimen name="wb_dialog_title_height">40.6dip</dimen>
+    <dimen name="wb_dialog_title_size">26sp</dimen>
+    <!-- From: file:/Users/root1/Documents/workspaceNewAn/Zhaobiao/build/intermediates/exploded-aar/workspaceNewAn/library/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <item name="gridview" type="id"/>
+    <item name="scrollview" type="id"/>
+    <!-- From: file:/Users/root1/Documents/workspaceNewAn/Zhaobiao/build/intermediates/exploded-aar/workspaceNewAn/smenulibrary/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <item name="selected_view" type="id"/>
+    <!-- From: file:/Users/root1/Documents/workspaceNewAn/Zhaobiao/build/intermediates/exploded-aar/workspaceNewAn/library/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <item name="webview" type="id"/>
+    <!-- From: file:/Users/root1/Documents/workspaceNewAn/Zhaobiao/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">抢标神器</string>
+    <string name="arrive_notification_message"> Arrived a notification message. Content is \"%1$s\"</string>
+    <string name="click_notification_message"> Clicked a notification message. Content is \"%1$s\"</string>
+    <string name="current_env">当前环境：%s</string>
+    <string name="goto_rest">进入休息模式</string>
+    <string name="goto_service">进入服务模式</string>
+    <!-- From: file:/Users/root1/Documents/workspaceNewAn/Zhaobiao/build/intermediates/exploded-aar/workspaceNewAn/Commonlib/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <string name="hello_world">Hello world!</string>
+    <!-- From: file:/Users/root1/Documents/workspaceNewAn/Zhaobiao/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="hint2">服务模式增加弹出式提醒&amp;语音播报</string>
+    <string name="log">日志</string>
+    <string name="official_env">线上环境</string>
+    <string name="pause_push">暂停推送</string>
+    <!-- From: file:/Users/root1/Documents/workspaceNewAn/Zhaobiao/build/intermediates/exploded-aar/workspaceNewAn/library/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_pull_label">Pull to refresh…</string>
+    <string name="pull_to_refresh_refreshing_label">Loading…</string>
+    <string name="pull_to_refresh_release_label">Release to refresh…</string>
+    <!-- From: file:/Users/root1/Documents/workspaceNewAn/Zhaobiao/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="recv_passthrough_message"> Receive a passthrough message. Content is \"%1$s\"</string>
+    <string name="register_fail">Register push fail.</string>
+    <string name="register_success">Register push success.</string>
+    <string name="sandbox_env">沙箱环境</string>
+    <string name="set_accept_time">设置时间</string>
+    <string name="set_accept_time_fail"> Set accept time fail for %1$s.</string>
+    <string name="set_accept_time_success"> Set accept time %1$s - %2$s success.</string>
+    <string name="set_account">设置帐号</string>
+    <string name="set_account_fail"> Set account fail for %1$s.</string>
+    <string name="set_account_success"> Set account \"%1$s\" success.</string>
+    <string name="set_alias">设置别名</string>
+    <string name="set_alias_fail"> Set alias fail for %1$s.</string>
+    <string name="set_alias_success"> Set alias \"%1$s\" success.</string>
+    <string name="set_env">设置环境</string>
+    <string name="settings">设置</string>
+    <string name="subscribe_topic">订阅标签</string>
+    <string name="subscribe_topic_fail"> Subscribe topic fail for %1$s.</string>
+    <string name="subscribe_topic_success"> Subscribe topic \"%1$s\" success.</string>
+    <string name="unset_account">撤销帐号</string>
+    <string name="unset_account_fail"> Unset account fail for %1$s.</string>
+    <string name="unset_account_success"> Unset account \"%1$s\" success.</string>
+    <string name="unset_alias">撤销别名</string>
+    <string name="unset_alias_fail"> Unset alias fail for %1$s.</string>
+    <string name="unset_alias_success"> Unset alias \"%1$s\" success.</string>
+    <string name="unsubscribe_topic">撤销标签</string>
+    <string name="unsubscribe_topic_fail"> Unsubscribe topic fail for %1$s.</string>
+    <string name="unsubscribe_topic_success"> Unsubscribe topic \"%1$s\" success.</string>
+    <!-- From: file:/Users/root1/Documents/workspaceNewAn/Zhaobiao/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="AppTheme3" parent="AppBaseTheme">
+         <item name="android:windowNoTitle">true</item>
+         <item name="android:windowContentOverlay">@null</item>
+         
+        <!--   <item name="android:windowBackground">@android:color/transparent</item> -->
+        
+        <item name="android:windowIsTranslucent">true</item>
+       <!--  Note that we use the base animation style here (that is no
+             animations) because we really have no idea how this kind of
+             activity will be used. -->
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+    <style name="MyDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFullscreen">true</item> 
+    </style>
+    <style name="RequestDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="Widget_GifView" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style mce_bogus="1" name="dialogWindowAnim" parent="android:Animation">  
+        <item name="android:windowEnterAnimation">@anim/dialog_enter_anim</item>  
+        <item name="android:windowExitAnimation">@anim/dialog_exit_anim</item>  
+    </style>
+    <style name="fragment_tab">
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+      <!--   <item name="android:background">@drawable/weibolist_bottombar_itembg_selector</item> -->
+        <item name="android:button">@null</item>
+    </style>
+    <style name="line_about_us">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:background">@color/grays</item>
+    </style>
+    <style name="loading" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/sss</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="rl_about_us">
+        <item name="android:layout_height">44dp</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+    <style name="tv_about_us">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">fill_parent</item>
+       <item name="android:textSize">15sp</item>
+       <item name="android:textColor">@color/black</item>    
+     
+    </style>
+    <style name="weibo_tab">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingTop">8dip</item>
+        <item name="android:paddingBottom">4dip</item>
+        <item name="android:background">@drawable/weibolist_bottombar_itembg_selector</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:button">@null</item>
+    </style>
+</resources>

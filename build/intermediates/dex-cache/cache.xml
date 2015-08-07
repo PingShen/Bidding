@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/root1/Documents/workspaceNewAn/Zhaobiao/libs/jg_filter_sdk_1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ebfc3cde0309ff27e9568757784eefefc71407a2">
+        <dex dex="/Users/root1/Documents/workspaceNewAn/Zhaobiao/build/intermediates/pre-dexed/debug/jg_filter_sdk_1.1-e5978a1a47a1605078a982c2916a163228a082e3.jar" />
+    </item>
+    <item
+        jar="/Users/root1/Documents/workspaceNewAn/Zhaobiao/libs/bugly_1.2.0.1_release.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3bfba87c8fa64d57c6debc4b4596d001761db8f9">
+        <dex dex="/Users/root1/Documents/workspaceNewAn/Zhaobiao/build/intermediates/pre-dexed/debug/bugly_1.2.0.1_release-02bc7d70b49752e602f601a41f6a79f4925811df.jar" />
+    </item>
+    <item
+        jar="/Users/root1/Documents/workspaceNewAn/Zhaobiao/libs/MiPush_SDK_Client_2_2_16.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3e4a5b7d14dd3b95cb0dfff1b0f28265c528e101">
+        <dex dex="/Users/root1/Documents/workspaceNewAn/Zhaobiao/build/intermediates/pre-dexed/debug/MiPush_SDK_Client_2_2_16-92a64fbe4c6396c08971f79ac3647fed40c220c1.jar" />
+    </item>
+    <item
+        jar="/Users/root1/Documents/workspaceNewAn/Zhaobiao/libs/Msc.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b094b9a52d88af3cae8dcd3ede86ce6308b1a3bb">
+        <dex dex="/Users/root1/Documents/workspaceNewAn/Zhaobiao/build/intermediates/pre-dexed/debug/Msc-99b0508cf6de0f66b6a06f7580c86b08f2d952df.jar" />
+    </item>
+    <item
+        jar="/Users/root1/Documents/workspaceNewAn/Zhaobiao/libs/wup-1.0.0-SNAPSHOT.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a0845068801a0b9a3a144b7cf57cb650b3d467e5">
+        <dex dex="/Users/root1/Documents/workspaceNewAn/Zhaobiao/build/intermediates/pre-dexed/debug/wup-1.0.0-SNAPSHOT-2ef5fb5301698c469af2b7bb66b8d012a3867277.jar" />
+    </item>
+    <item
+        jar="/Users/root1/Documents/workspaceNewAn/Zhaobiao/build/intermediates/exploded-aar/workspaceNewAn/smenulibrary/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="2398f3d9783802289159006fa84d5110557e2b29">
+        <dex dex="/Users/root1/Documents/workspaceNewAn/Zhaobiao/build/intermediates/pre-dexed/debug/classes-077f7b9663215a64212928e9926cfc8ba28f78df.jar" />
+    </item>
+    <item
+        jar="/Users/root1/Documents/workspaceNewAn/Zhaobiao/build/intermediates/exploded-aar/workspaceNewAn/Commonlib/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6c0f17301397d85d689b222f4b6d6a55408d2d2a">
+        <dex dex="/Users/root1/Documents/workspaceNewAn/Zhaobiao/build/intermediates/pre-dexed/debug/classes-e4f73d09393336f42e3f56e3af19c82222318fcb.jar" />
+    </item>
+    <item
+        jar="/Users/root1/Documents/workspaceNewAn/Zhaobiao/libs/Xg_sdk_v2.38_20150616_1057.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b7d6cf9e40b44971cb043f30979ad6869295ae4c">
+        <dex dex="/Users/root1/Documents/workspaceNewAn/Zhaobiao/build/intermediates/pre-dexed/debug/Xg_sdk_v2.38_20150616_1057-cdfd8ca6c0887c750badd75399bb501cd2a8f7b0.jar" />
+    </item>
+    <item
+        jar="/Users/root1/Documents/workspaceNewAn/Zhaobiao/libs/mid-sdk-2.20.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="0822bf00661a83ba2fab32214c70cc50a244a0a3">
+        <dex dex="/Users/root1/Documents/workspaceNewAn/Zhaobiao/build/intermediates/pre-dexed/debug/mid-sdk-2.20-a1cb6132857f34c5ffc4275c657263c2ca3b5b06.jar" />
+    </item>
+    <item
+        jar="/Users/root1/Documents/workspaceNewAn/Zhaobiao/build/intermediates/exploded-aar/workspaceNewAn/Commonlib/unspecified/jars/libs/xUtils-2.6.14.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f10c51f3e0732fdeefe6e104279a58e275879b6c">
+        <dex dex="/Users/root1/Documents/workspaceNewAn/Zhaobiao/build/intermediates/pre-dexed/debug/xUtils-2.6.14-63b8dcbbf22e5cd8db7b90f42cc1563710844377.jar" />
+    </item>
+    <item
+        jar="/Users/root1/Documents/workspaceNewAn/Zhaobiao/libs/nineoldandroids-2.4.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a43cf9e271b5bc564e880a0a4be63ab9c69c97f8">
+        <dex dex="/Users/root1/Documents/workspaceNewAn/Zhaobiao/build/intermediates/pre-dexed/debug/nineoldandroids-2.4.0-1e8a1a908775f6b979d82dd011504ea2a7097b11.jar" />
+    </item>
+    <item
+        jar="/Users/root1/Documents/workspaceNewAn/Zhaobiao/libs/android-support-v4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="5896b0a4e377ac4242eb2bc785220c1c4fc052f4">
+        <dex dex="/Users/root1/Documents/workspaceNewAn/Zhaobiao/build/intermediates/pre-dexed/debug/android-support-v4-c530c619cc66ca7b868d9d3363d069dffb1a4237.jar" />
+    </item>
+    <item
+        jar="/Users/root1/Documents/workspaceNewAn/Zhaobiao/build/intermediates/exploded-aar/workspaceNewAn/library/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="2437c9da1641ab07a470097cd555606fa2eb1832">
+        <dex dex="/Users/root1/Documents/workspaceNewAn/Zhaobiao/build/intermediates/pre-dexed/debug/classes-2c9a6f9648d31d991215c3b638ce43b45c3b89ac.jar" />
+    </item>
+    <item
+        jar="/Users/root1/Documents/workspaceNewAn/Zhaobiao/libs/Sunflower.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="695fda9aeebe54be7cd2c1a6f9745c6b9cd380ef">
+        <dex dex="/Users/root1/Documents/workspaceNewAn/Zhaobiao/build/intermediates/pre-dexed/debug/Sunflower-412ff21ecb33dc8891e64de879cf823c7194199a.jar" />
+    </item>
+    <item
+        jar="/Users/root1/Documents/workspaceNewAn/Zhaobiao/build/intermediates/exploded-aar/workspaceNewAn/Commonlib/unspecified/jars/libs/fastjson-1.2.5.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9f675e9a1b2bf1224183005752a9214226e8aa8e">
+        <dex dex="/Users/root1/Documents/workspaceNewAn/Zhaobiao/build/intermediates/pre-dexed/debug/fastjson-1.2.5-f9a03ca3f2c9a81de177901427c158ac343be2ff.jar" />
+    </item>
+
+</items>

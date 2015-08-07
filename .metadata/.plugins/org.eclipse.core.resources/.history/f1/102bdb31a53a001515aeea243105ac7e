@@ -1,0 +1,5 @@
+package com.huangyezhaobiao.vm;
+
+public class GetCodeViewModel {
+
+}

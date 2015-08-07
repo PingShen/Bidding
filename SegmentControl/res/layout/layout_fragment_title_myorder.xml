@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/rl_all"
+       style="@style/fragment_tab" >
+
+        <TextView
+            android:id="@+id/tv_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="全部" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_contact"
+        style="@style/fragment_tab" >
+
+        <TextView
+            android:id="@+id/tv_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="待联系" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_ensure"
+         style="@style/fragment_tab">
+
+        <TextView
+            android:id="@+id/tv_ensure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="待确认" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_done"
+         style="@style/fragment_tab" >
+
+        <TextView
+            android:id="@+id/tv_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="已完成" />
+    </RelativeLayout>
+
+</LinearLayout>

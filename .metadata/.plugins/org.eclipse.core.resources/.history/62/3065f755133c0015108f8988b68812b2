@@ -1,0 +1,102 @@
+package com.huangyezhaobiao.vm;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
+import com.huangye.commonlib.model.NetWorkModel;
+import com.huangye.commonlib.utils.JsonUtils;
+import com.huangye.commonlib.utils.NetBean;
+import com.huangye.commonlib.vm.callback.NetWorkVMCallBack;
+import com.huangyezhaobiao.R;
+import com.huangyezhaobiao.bean.popdetail.BottomViewBean;
+import com.huangyezhaobiao.bean.popdetail.CommonDecorateInfoBean;
+import com.huangyezhaobiao.bean.popdetail.CommonInternationalRegisterInfoBean;
+import com.huangyezhaobiao.bean.popdetail.CommonPersonalRegisterInfoBean;
+import com.huangyezhaobiao.bean.popdetail.LogBean;
+import com.huangyezhaobiao.bean.popdetail.QDDetailBaseBean;
+import com.huangyezhaobiao.bean.popdetail.SumplymentInfoBean;
+import com.huangyezhaobiao.bean.popdetail.TimeFeeBean;
+import com.huangyezhaobiao.inter.OrderDetailCallBack;
+import com.huangyezhaobiao.lib.ZBBaseDetailViewModel;
+import com.huangyezhaobiao.model.PopDetailModel;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.TextView;
+
+public class QIangDanDetailViewModel extends ZBBaseDetailViewModel<QDDetailBaseBean>{
+	
+	LogBean log;
+	BottomViewBean bottom;
+	OrderDetailCallBack back;
+	public QIangDanDetailViewModel(NetWorkVMCallBack callBack, OrderDetailCallBack back,Context context,PushToPassBean passBean) {
+		super(callBack, context, orderId);
+		((PopDetailModel)t).setOrderId(orderId);
+		this.back = back;
+	}
+
+	
+	public void getdata(){
+		t.getDatas();
+	}
+	
+	@Override
+	protected void initKey() {
+		key = "newtype";
+		
+	}
+
+	@Override
+	protected void registerSourceDirs() {
+		sourcesDir.put("common_info_decorate_area", CommonDecorateInfoBean.class);
+		sourcesDir.put("sumplyment_info_area", SumplymentInfoBean.class);
+		sourcesDir.put("time_fee_area", TimeFeeBean.class);
+		sourcesDir.put("common_info_international_register_area", CommonInternationalRegisterInfoBean.class);
+		sourcesDir.put("common_info_personal_register_area", CommonPersonalRegisterInfoBean.class);
+		//common_info_international_register_area
+		//common_info_personal_register_area
+		
+	}
+
+	@Override
+	protected NetWorkModel initListNetworkModel(Context context) {
+		return new PopDetailModel(this, context);
+	}
+
+	@Override
+	protected List<View> transferListBeanToListView(List<QDDetailBaseBean> list) {
+		
+		
+		
+		List<View> viewList = new ArrayList<View>();
+		
+		for(QDDetailBaseBean bean :list){
+			//bean.set
+			viewList.add(bean.initView(context));
+		}
+		
+		return viewList;
+	}
+	
+	
+	@Override
+	public void onLoadingSuccess(NetBean bean, NetWorkModel model) {
+		try{
+		JSONObject object = JSON.parseObject(bean.getOther()); 
+		log = JsonUtils.jsonToObject(object.getString("log"),LogBean.class);
+		bottom = JsonUtils.jsonToObject(object.getString("bottom_view_area"),BottomViewBean.class);
+		
+		back.back(log, bottom);
+		}catch(Exception e){
+			
+		}
+		super.onLoadingSuccess(bean, model);
+	}
+	
+	
+	
+
+}

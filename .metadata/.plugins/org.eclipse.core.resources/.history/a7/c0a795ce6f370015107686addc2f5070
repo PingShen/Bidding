@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_backhead" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/whitedark" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" >
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="44dp" 
+                android:text="手机号"
+                android:textColor="@color/black"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:background="@color/white" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/whitedark" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:text="手机号"
+                android:textColor="@color/black"/>
+            
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="44dp"
+                android:layout_weight="2"
+                android:background="@color/white" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="44dp"
+                android:background="@color/whitedark" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="44dp"
+                android:layout_weight="5"
+                android:background="@color/white"
+                android:text="获取验证码"
+                android:textColor="@color/red" />
+
+            <EditText>
+            </EditText>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/whitedark" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/t_redbuttonselector"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+</LinearLayout>

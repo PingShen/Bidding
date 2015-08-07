@@ -1,0 +1,43 @@
+package com.huangyezhaobiao.bean.push;
+
+import java.io.Serializable;
+
+public class PopPassBean implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+
+	private int pushTurn; // 推送轮次
+	private long pushId; // 推送Id
+	private long bidId; //标的id
+	private int cateId;
+	
+	
+	public int getPushTurn() {
+		return pushTurn;
+	}
+
+	public void setPushTurn(int pushTurn) {
+		this.pushTurn = pushTurn;
+	}
+
+	public long getPushId() {
+		return pushId;
+	}
+
+	public void setPushId(long pushId) {
+		this.pushId = pushId;
+	}
+
+	public long getBidId() {
+		return bidId;
+	}
+
+	public void setBidId(long bidId) {
+		this.bidId = bidId;
+	}
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+
+}

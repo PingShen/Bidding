@@ -1,0 +1,5 @@
+package com.huangye.commonlib.utils;
+
+public class ConditionBean {
+
+}

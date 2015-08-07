@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_no_internet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f9fa" >
+
+    <ImageView
+        android:id="@+id/iv_no_orders"
+        android:layout_width="173dp"
+        android:layout_height="183dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:src="@drawable/no_orders" />
+
+    <TextView
+        android:id="@+id/tv_no_orders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_no_orders"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="  您没有可抢订单呢！"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/ty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_no_orders"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="赶快去查看可抢订单吧~"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/layout_no_internet_click_refresh"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:layout_below="@id/ty"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_qd_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="查看可抢订单"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="265" key="DIALOG_WIDTH"/>
+		<item value="99" key="DIALOG_Y_ORIGIN"/>
+		<item value="399" key="DIALOG_HEIGHT"/>
+		<item value="17" key="DIALOG_X_ORIGIN"/>
+		<item value="1|.Helvetica Neue DeskInterface|11.0|0|COCOA|1|.HelveticaNeueDeskInterface-Regular" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="false" key="isRegEx"/>
+		<item value="true" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="dialog" key="selection"/>
+		<list key="findhistory">
+			<item value="dialog"/>
+			<item value="updateViewModel"/>
+			<item value="detector"/>
+			<item value="gary"/>
+			<item value="garyview"/>
+			<item value="mPullToRefreshListView"/>
+			<item value="no_bid"/>
+			<item value="Log.e(&quot;ashenFileaaaaa&quot;"/>
+		</list>
+		<list key="replacehistory">
+			<item value="//Log.e(&quot;ashenFileaaaaa&quot;"/>
+			<item value="//Log.e(&quot;ashenqqq&quot;"/>
+			<item value="URLConstans.BASE_URL+&quot;"/>
+			<item value="&quot;http://192.168.118.41/"/>
+			<item value="//Log.e"/>
+			<item value="OrderListActivity"/>
+			<item value="bidId"/>
+			<item value="renovation"/>
+		</list>
+	</section>
+</section>

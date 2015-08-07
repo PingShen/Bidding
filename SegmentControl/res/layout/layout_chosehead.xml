@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutchose_head"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/headbackground"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="46dip"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical" >
+		
+        <com.huangyezhaobiao.specialcomponent.segment.SegmentControl
+            android:id="@+id/segcontrol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@color/headbackground"
+            android:gravity="center_vertical" />
+        
+        <ImageView
+            android:id="@+id/userbutton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/refreshbuttonselector" />
+        
+        <ImageView
+            android:id="@+id/refreshbutton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/refreshbuttonselector" />	
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/t_login_backgrand"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="97dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="97dp"
+        android:src="@drawable/launcher" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="抢标神器"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:id="@+id/textlinear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        android:padding="1dp" >
+
+        <LinearLayout
+            android:layout_width="291dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/t_login_shape"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/userIcon"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:src="@drawable/t_login_username"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="235dp"
+                android:layout_height="40dip"
+                android:background="@null"
+                android:hint="用户名/邮箱/手机号"
+                android:paddingLeft="5dip"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/t_near_white" />
+
+            <ImageButton
+                android:id="@+id/nCloseBtn"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:background="@drawable/t_login_delete"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="291dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/t_login_shape"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/passwordIcon"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:src="@drawable/t_login_password"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="235dp"
+                android:layout_height="40dip"
+                android:background="@null"
+                android:hint="密码"
+                android:inputType="textPassword"
+                android:paddingLeft="5dip"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/t_near_white" />
+
+            <ImageButton
+                android:id="@+id/pCloseBtn"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:background="@drawable/t_login_delete"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dip"
+        android:background="@drawable/t_whitebuttonselector"
+        android:gravity="center"
+        android:tag="登录"
+        android:text="登陆"
+        android:textColor="@color/tab_red"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="14dp"
+        android:layout_weight="1"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册、找回密码请到www.58.com操作"
+            android:textColor="#B5313E"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+</LinearLayout>

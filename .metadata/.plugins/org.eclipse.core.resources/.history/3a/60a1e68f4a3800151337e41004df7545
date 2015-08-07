@@ -1,0 +1,45 @@
+package com.huangyezhaobiao.vm;
+
+import java.util.HashMap;
+
+import com.huangye.commonlib.model.NetWorkModel;
+import com.huangye.commonlib.utils.NetBean;
+import com.huangye.commonlib.vm.SourceViewModel;
+import com.huangye.commonlib.vm.callback.NetWorkVMCallBack;
+import com.huangyezhaobiao.model.LoginModel;
+
+import android.content.Context;
+import android.util.Log;
+
+public class LoginViewModel extends SourceViewModel{
+
+	public LoginViewModel(NetWorkVMCallBack callBack, Context context) {
+		super(callBack, context);
+		// TODO Auto-generated constructor stub
+	}
+
+	
+	public void login(String username,String password){
+		t.setRequestMethodPost();
+		HashMap<String, String> params_map = new HashMap<String, String>();
+		//password=admin&userName=admin&platform=android&deviceId=211&token=111
+		Log.e("ashenlogin", "username:"+username+",password:"+password);
+		params_map.put("password", password);
+		params_map.put("userName", username);
+		params_map.put("platform", "1");
+		params_map.put("deviceId", username);
+		params_map.put("token", "111");
+		t.configParams(params_map);
+		t.getDatas();
+		//?password=admin&userName=admin&platform=android&deviceId=123&token=123
+	}
+	
+	@Override
+	protected NetWorkModel initListNetworkModel(Context context) {
+		
+		return new LoginModel(this, context);
+	}
+	
+
+
+}

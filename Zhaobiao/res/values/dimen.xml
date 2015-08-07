@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <!--native dialog  -->
+	<dimen name="wb_dialog_margin">33.3dip</dimen>
+	<dimen name="wb_dialog_content_margin">20dip</dimen>
+	<dimen name="wb_dialog_button_margin">12dip</dimen>
+	<dimen name="wb_dialog_title_size">26sp</dimen>
+	<dimen name="wb_dialog_resume_title_size">20sp</dimen>
+	<dimen name="wb_dialog_content_size">19sp</dimen>
+	<dimen name="wb_dialog_button_size">16sp</dimen>
+	<dimen name="wb_dialog_button_height">38.6dip</dimen>
+	<dimen name="wb_dialog_title_height">40.6dip</dimen> 
+	
+	<!-- Loading控件的适配  (3.0版本IM在用，如果修改，请通知)-->
+	<dimen name="loading_width">276.7dip</dimen>
+	<dimen name="loading_height">260dip</dimen>
+	<dimen name="loading_progressbar_marginTop">19.3dip</dimen>
+	<dimen name="loading_textview_marginTop">16.7dip</dimen>
+	<dimen name="loading_linearlayout_marginTop">25dip</dimen>
+	<dimen name="loading_button_width">80dip</dimen>
+	<dimen name="loading_button_height">31dip</dimen>
+	<dimen name="loading_button_marginLeft">32dip</dimen>
+	<dimen name="loading_imageview_linearlayout_marginTop">20dip</dimen>
+	<dimen name="loading_imageview_marginLeft">20dip</dimen>
+	<dimen name="loading_text_marginRight">13.3dip</dimen>
+	
+	<dimen name="main_frame_item_normaltextsize">18sp</dimen>
+	
+	<dimen name="public_loading_icon_width">53dip</dimen>
+    <dimen name="public_loading_icon_height">53dip</dimen>
+    
+    <!-- 分享 -->
+	<dimen name="share_content_height">256dip</dimen>
+	<dimen name="share_cancel_btn_height">45dip</dimen>
+	<dimen name="share_cancel_btn_margin">5dip</dimen>
+	<dimen name="share_cancel_btn_textsize">16dip</dimen>
+	<dimen name="share_gridview_horizontalSpacing">20dip</dimen>
+	
+	<!-- 设置 -->
+	<dimen name="set_img_widthandheight">14dip</dimen>
+	<dimen name="cornerradius">20dip</dimen>
+	
+	<!-- 司机列表页-->
+	<dimen name="driver_item_size">14dip</dimen>
+	
+	<dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">0dp</dimen>
+</resources>

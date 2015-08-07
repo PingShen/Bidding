@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <include
+        layout="@layout/layout_top_message"
+        />
+	<include
+        layout="@layout/layout_order_hint"
+        />
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="100dp"
+	    android:orientation="horizontal"
+	    >
+	    <Button
+	        android:onClick="insert_yue"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:text="插入余额数据"
+	        />
+	    
+	     <Button
+	         android:onClick="insert_koufei"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:text="插入扣费数据"
+	        />
+	      <Button
+	        android:onClick="insert_daojishi"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:text="插入倒计时数据"
+	        />
+	       <Button
+	           android:onClick="insert_sysnoti"
+		        android:layout_width="0dp"
+		        android:layout_weight="1"
+		        android:layout_height="wrap_content"
+		        android:text="插入系统通知数据"
+	        />
+	 </LinearLayout>
+	
+	<ListView
+	    android:id="@+id/lv_message_center"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:cacheColorHint="@android:color/transparent"
+        android:fadingEdge="none"
+        android:listSelector="#00000000"
+        android:persistentDrawingCache="none"
+        android:scrollbars="none"
+        android:scrollingCache="false"
+	    />
+</LinearLayout>

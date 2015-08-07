@@ -1,0 +1,64 @@
+package com.huangyezhaobiao.bean;
+
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.text.TextUtils;
+
+public class LoginBean {
+	
+	
+	
+//	
+//	
+//	private static final String KEY_NAME = "name";
+//	private static final String KEY_PWD = "password";
+//	private static LoginBean user;
+//	private SharedPreferences sp;
+//	private LoginBean(){};
+//	public static LoginBean getLogin(){
+//		if(user == null){
+//			synchronized (LoginBean.class) {
+//				if(user == null){
+//					user = new LoginBean();
+//				}
+//			}
+//		}
+//		return user;
+//	} 
+//	
+//	
+//	public void saveName(Context context,String name){
+//		getSpModel(context);
+//		sp.edit().putString(KEY_NAME, name).commit();
+//	}
+//	
+//	
+//	public void savePwd(Context context,String password){
+//		//进行一个md5的加密
+//		getSpModel(context);
+//		sp.edit().putString(KEY_PWD, password).commit();
+//	}
+//	
+//	/**
+//	 * 是否登录
+//	 * @return
+//	 */
+//	public boolean isLogin(Context context){
+//		getSpModel(context);
+//		return !TextUtils.isEmpty(sp.getString(KEY_PWD, ""));
+//	}
+//	
+//	private void getSpModel(Context context) {
+//		if(sp == null)
+//			sp = context.getSharedPreferences("loginfo", 0);
+//	}
+//	
+//	
+//	/**
+//	 * 取消登录
+//	 */
+//	public void clearLoginInfo(Context context){
+//		getSpModel(context);
+//		sp.edit().clear().commit();
+//	}
+}

@@ -1,0 +1,10 @@
+package com.huangyezhaobiao.inter;
+
+import com.huangyezhaobiao.bean.popdetail.BottomViewBean;
+import com.huangyezhaobiao.bean.popdetail.LogBean;
+
+public interface OrderDetailCallBack {
+
+	 void back(LogBean log,BottomViewBean bottom);
+	
+}

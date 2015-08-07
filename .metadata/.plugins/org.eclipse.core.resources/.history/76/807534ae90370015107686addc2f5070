@@ -1,0 +1,76 @@
+package com.huangyezhaobiao.activity;
+
+import com.huangyezhaobiao.R;
+import com.huangyezhaobiao.bean.push.PushBean;
+import com.huangyezhaobiao.enums.TitleBarType;
+import com.huangyezhaobiao.utils.ActivityUtils;
+
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+/**
+ * 抢单失败界面
+ * @author linyueyang
+ *
+ */
+public class BidFailureActivity extends QBBaseActivity{
+
+	private TextView txt_head;
+	private Button toBidList;
+	private LinearLayout back_layout;
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_bid_failure);
+	}
+	
+	@Override
+	public void initView() {
+		toBidList = (Button) findViewById(R.id.failure_bidlist);
+		back_layout = (LinearLayout) this.findViewById(R.id.back_layout);
+	}
+
+	@Override
+	public void initListener() {
+		back_layout.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				finish();
+			}
+		});
+		toBidList.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				ActivityUtils.goToActivity(BidFailureActivity.this, MainActivity.class);
+			}
+		});
+	}
+	
+	@Override
+	public void onNotificationCome(PushBean pushBean) {
+		
+	}
+
+	@Override
+	public void onTitleBarClicked(TitleBarType type) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void NetConnected() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void NetDisConnected() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

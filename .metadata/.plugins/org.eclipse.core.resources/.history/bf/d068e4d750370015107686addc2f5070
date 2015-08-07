@@ -1,0 +1,47 @@
+package com.huangyezhaobiao.activity;
+
+import com.huangyezhaobiao.R;
+import com.huangyezhaobiao.bean.push.PushBean;
+import com.huangyezhaobiao.enums.TitleBarType;
+
+import android.os.Bundle;
+
+/**
+ * 抢单失败界面
+ * @author linyueyang
+ *
+ */
+public class BidFailureActivity extends QBBaseActivity{
+
+
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_bid_failure);
+		initView();
+		initListener();
+	}
+	
+	@Override
+	public void initView() {
+		
+	}
+
+	@Override
+	public void initListener() {
+		
+	}
+	
+
+	@Override
+	public void NetConnected() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void NetDisConnected() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

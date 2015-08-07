@@ -1,0 +1,77 @@
+package com.huangyezhaobiao.vm;
+
+import java.util.Date;
+import java.util.HashMap;
+
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
+import com.huangye.commonlib.model.NetWorkModel;
+import com.huangye.commonlib.utils.NetBean;
+import com.huangye.commonlib.vm.SourceViewModel;
+import com.huangye.commonlib.vm.callback.NetWorkVMCallBack;
+import com.huangyezhaobiao.bean.push.PushToPassBean;
+import com.huangyezhaobiao.model.KnockModel;
+import com.huangyezhaobiao.utils.UserUtils;
+
+import android.content.Context;
+import android.text.TextUtils;
+
+public class KnockViewModel extends SourceViewModel{
+
+	private Context context;
+	
+	public KnockViewModel(NetWorkVMCallBack callBack, Context context) {
+		super(callBack, context);
+		// TODO Auto-generated constructor stub
+	}
+
+	
+	public void knock(PushToPassBean bean){
+		t.setRequestMethodPost();
+		HashMap<String, String> params_map = new HashMap<String, String>();
+		
+		long userId = Long.parseLong(UserUtils.getUserId(context));
+		long bidId = bean.getBidId();//3088606247077150811L;//
+		long pushId = bean.getPushId();//3087873205681979483L;//
+		int pushTurn = bean.getPushTurn();//1;//bean.getPushTurn();
+		 
+		params_map.put("userId", ""+userId);
+		params_map.put("bidId", ""+bidId);
+		params_map.put("pushId", ""+pushId);
+		params_map.put("pushTurn", ""+pushTurn);
+		
+		params_map.put("token", new Date().getTime()+"");
+		
+		t.configParams(params_map);
+		t.getDatas();
+	}
+	
+	
+	@Override
+	protected NetWorkModel initListNetworkModel(Context context) {
+		
+		return new KnockModel(this, context);
+	}
+	
+	@Override
+	public void onLoadingSuccess(NetBean bean, NetWorkModel model) {
+		int status = bean.getStatus();
+		//if(status==0){
+			
+			JSONObject object = JSON.parseObject(bean.getData());
+			int knockStatus = object.getInteger("status");
+			callBack.onLoadingSuccess(knockStatus);
+//		}else{
+//			String msg = bean.getMsg();
+//			if(!TextUtils.isEmpty(msg)){
+//				callBack.onLoadingError(bean.getMsg());
+//			}else{
+//				callBack.onLoadingError("连接失败!");
+//			}
+//		}
+	}
+	
+	
+
+
+}

@@ -1,0 +1,82 @@
+package com.huangyezhaobiao.activity;
+
+import com.huangyezhaobiao.R;
+import com.huangyezhaobiao.bean.push.PopPassBean;
+import com.huangyezhaobiao.bean.push.PushBean;
+import com.huangyezhaobiao.enums.TitleBarType;
+import com.huangyezhaobiao.utils.StateUtils;
+import com.huangyezhaobiao.view.MyCustomDialog;
+import com.huangyezhaobiao.vm.KnockViewModel;
+
+import android.os.Bundle;
+import android.view.View;
+
+/**
+ * 抢单等待界面
+ * @author linyueyang
+ *
+ */
+public class BidLoadingActivity extends QBBaseActivity{
+
+
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_bid_loading);
+		initView();
+		initListener();
+	}
+	
+	@Override
+	public void initView() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void initListener() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	@Override
+	public void onNotificationCome(PushBean pushBean) {
+		if (null != pushBean) {
+			int type = pushBean.getTag();
+			if (type == 100 && StateUtils.getState(MainActivity.this) == 1) {
+				MyCustomDialog dialog = MyCustomDialog.getInstance(this, new MyCustomDialog.OnCustomDialogListener() {
+					//点击抢单后的回调
+					@Override
+					public void back(PopPassBean bean) {
+						knockViewModel = new KnockViewModel(MainActivity.this, MainActivity.this);
+						knockViewModel.knock(bean);
+					}
+				});
+				dialog.show();
+			}
+			else{
+				tbl.setPushBean(pushBean);
+				tbl.setVisibility(View.VISIBLE);
+			}
+		}
+		
+	}
+
+	@Override
+	public void onTitleBarClicked(TitleBarType type) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void NetConnected() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void NetDisConnected() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

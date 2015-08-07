@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/service"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/white">
+
+    <com.huangyezhaobiao.view.GifView
+        android:id="@+id/radar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="130dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/txt_orderstate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:text="正在接收订单‥‥"
+        android:layout_gravity="center"
+        android:textColor="@color/drakblack"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/txt_orderstate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dip"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:text="您处于服务模式，将接收实时订单推送"
+        android:layout_gravity="center"
+        android:textColor="@color/checkmoresoligthword"
+        android:textSize="14sp"/>
+    <LinearLayout
+        android:id="@+id/no_network1"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="horizontal" 
+	    android:background="@color/white">
+	    
+	    <Button
+	        android:id="@+id/relocal_button"
+	        android:layout_width="20dp"
+	        android:layout_height="46dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:layout_gravity="center"
+	        android:background="@drawable/orangebuttonselector"
+	        android:text="我的抢单"
+	        android:textColor="@color/white"
+	        android:textSize="18sp"
+	        android:layout_weight="1"
+	        />
+
+	    <Button
+	        android:id="@+id/button_400"
+	        android:layout_width="20dp"
+	        android:layout_height="46dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:layout_gravity="center"
+	        android:background="@drawable/writebuttonselector"
+	        android:text="可抢订单"
+	        android:textSize="18sp"
+	        android:textColor="@color/drakblack"
+	        android:layout_weight="1"
+	        />
+	</LinearLayout>
+
+</LinearLayout>

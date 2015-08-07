@@ -1,0 +1,322 @@
+-- Merging decision tree log ---
+manifest
+ADDED from AndroidManifest.xml:2:1
+	xmlns:android
+		ADDED from AndroidManifest.xml:2:11
+	package
+		ADDED from AndroidManifest.xml:3:5
+	android:versionName
+		ADDED from AndroidManifest.xml:6:5
+	android:versionCode
+		ADDED from AndroidManifest.xml:5:5
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:installLocation
+		ADDED from AndroidManifest.xml:4:5
+uses-sdk
+ADDED from AndroidManifest.xml:8:5
+MERGED from workspaceNewAn:library:unspecified:7:5
+MERGED from workspaceNewAn:smenulibrary:unspecified:7:5
+MERGED from workspaceNewAn:Commonlib:unspecified:7:5
+	android:targetSdkVersion
+		ADDED from AndroidManifest.xml:10:9
+	android:minSdkVersion
+		ADDED from AndroidManifest.xml:9:9
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from AndroidManifest.xml:12:5
+	android:name
+		ADDED from AndroidManifest.xml:12:22
+uses-permission#android.permission.INTERNET
+ADDED from AndroidManifest.xml:13:5
+	android:name
+		ADDED from AndroidManifest.xml:13:22
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from AndroidManifest.xml:14:5
+	android:name
+		ADDED from AndroidManifest.xml:14:22
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from AndroidManifest.xml:15:5
+	android:name
+		ADDED from AndroidManifest.xml:15:22
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from AndroidManifest.xml:16:5
+	android:name
+		ADDED from AndroidManifest.xml:16:22
+uses-permission#android.permission.GET_TASKS
+ADDED from AndroidManifest.xml:17:5
+	android:name
+		ADDED from AndroidManifest.xml:17:22
+uses-permission#android.permission.CALL_PHONE
+ADDED from AndroidManifest.xml:18:5
+	android:name
+		ADDED from AndroidManifest.xml:18:22
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from AndroidManifest.xml:22:5
+	android:name
+		ADDED from AndroidManifest.xml:22:22
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from AndroidManifest.xml:28:5
+	android:name
+		ADDED from AndroidManifest.xml:28:22
+uses-permission#android.permission.READ_CONTACTS
+ADDED from AndroidManifest.xml:32:5
+	android:name
+		ADDED from AndroidManifest.xml:32:22
+permission#com.huangyezhaobiao.permission.MIPUSH_RECEIVE
+ADDED from AndroidManifest.xml:34:5
+	android:protectionLevel
+		ADDED from AndroidManifest.xml:36:9
+	android:name
+		ADDED from AndroidManifest.xml:35:9
+uses-permission#com.huangyezhaobiao.permission.MIPUSH_RECEIVE
+ADDED from AndroidManifest.xml:38:5
+	android:name
+		ADDED from AndroidManifest.xml:38:22
+uses-permission#android.permission.VIBRATE
+ADDED from AndroidManifest.xml:39:5
+	android:name
+		ADDED from AndroidManifest.xml:39:22
+uses-permission#android.permission.READ_LOGS
+ADDED from AndroidManifest.xml:49:5
+	android:name
+		ADDED from AndroidManifest.xml:49:22
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from AndroidManifest.xml:57:5
+	android:name
+		ADDED from AndroidManifest.xml:57:22
+uses-permission#android.permission.RESTART_PACKAGES
+ADDED from AndroidManifest.xml:58:5
+	android:name
+		ADDED from AndroidManifest.xml:58:22
+uses-permission#android.permission.BROADCAST_STICKY
+ADDED from AndroidManifest.xml:59:5
+	android:name
+		ADDED from AndroidManifest.xml:59:22
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from AndroidManifest.xml:60:5
+	android:name
+		ADDED from AndroidManifest.xml:60:22
+uses-permission#android.permission.RECEIVE_USER_PRESENT
+ADDED from AndroidManifest.xml:61:5
+	android:name
+		ADDED from AndroidManifest.xml:61:22
+uses-permission#android.permission.WAKE_LOCK
+ADDED from AndroidManifest.xml:63:5
+	android:name
+		ADDED from AndroidManifest.xml:63:22
+uses-permission#android.permission.KILL_BACKGROUND_PROCESSES
+ADDED from AndroidManifest.xml:64:5
+	android:name
+		ADDED from AndroidManifest.xml:64:22
+uses-permission#android.permission.BLUETOOTH
+ADDED from AndroidManifest.xml:69:5
+	android:name
+		ADDED from AndroidManifest.xml:69:22
+uses-permission#android.permission.BATTERY_STATS
+ADDED from AndroidManifest.xml:70:5
+	android:name
+		ADDED from AndroidManifest.xml:70:22
+application
+ADDED from AndroidManifest.xml:73:5
+MERGED from workspaceNewAn:library:unspecified:9:5
+MERGED from workspaceNewAn:Commonlib:unspecified:11:5
+	android:label
+		ADDED from AndroidManifest.xml:76:9
+	android:allowBackup
+		ADDED from AndroidManifest.xml:75:9
+	android:icon
+		ADDED from workspaceNewAn:Commonlib:unspecified:13:9
+	android:theme
+		ADDED from workspaceNewAn:Commonlib:unspecified:15:9
+	android:largeHeap
+		ADDED from AndroidManifest.xml:77:9
+	android:name
+		ADDED from AndroidManifest.xml:74:9
+activity#com.huangyezhaobiao.activity.LoginActivity
+ADDED from AndroidManifest.xml:78:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:82:13
+	android:label
+		ADDED from AndroidManifest.xml:80:13
+	android:name
+		ADDED from AndroidManifest.xml:79:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:81:13
+activity#com.huangyezhaobiao.activity.MainActivity
+ADDED from AndroidManifest.xml:91:9
+	android:label
+		ADDED from AndroidManifest.xml:93:13
+	android:name
+		ADDED from AndroidManifest.xml:92:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:94:13
+activity#com.huangyezhaobiao.activity.OrderDetailActivity
+ADDED from AndroidManifest.xml:96:9
+	android:label
+		ADDED from AndroidManifest.xml:98:13
+	android:name
+		ADDED from AndroidManifest.xml:97:13
+activity#com.huangyezhaobiao.activity.HelpActivity
+ADDED from AndroidManifest.xml:101:9
+	android:label
+		ADDED from AndroidManifest.xml:103:13
+	android:name
+		ADDED from AndroidManifest.xml:102:13
+activity#com.huangyezhaobiao.activity.AboutActivity
+ADDED from AndroidManifest.xml:105:9
+	android:label
+		ADDED from AndroidManifest.xml:107:13
+	android:name
+		ADDED from AndroidManifest.xml:106:13
+activity#com.huangyezhaobiao.activity.OrderListActivity
+ADDED from AndroidManifest.xml:109:9
+	android:label
+		ADDED from AndroidManifest.xml:111:13
+	android:name
+		ADDED from AndroidManifest.xml:110:13
+activity#com.huangyezhaobiao.activity.MessageCenterActivity
+ADDED from AndroidManifest.xml:114:9
+	android:name
+		ADDED from AndroidManifest.xml:114:19
+activity#com.huangyezhaobiao.activity.YuEDetailActivity
+ADDED from AndroidManifest.xml:116:9
+	android:name
+		ADDED from AndroidManifest.xml:116:19
+activity#com.huangyezhaobiao.activity.OtherDetailActivity
+ADDED from AndroidManifest.xml:118:9
+	android:name
+		ADDED from AndroidManifest.xml:118:19
+activity#com.huangyezhaobiao.activity.UserFeedBackActivity
+ADDED from AndroidManifest.xml:120:9
+	android:name
+		ADDED from AndroidManifest.xml:120:19
+activity#com.huangyezhaobiao.activity.FetchDetailsActivity
+ADDED from AndroidManifest.xml:121:9
+	android:name
+		ADDED from AndroidManifest.xml:121:19
+activity#com.huangyezhaobiao.activity.MobileValidateActivity
+ADDED from AndroidManifest.xml:122:9
+	android:name
+		ADDED from AndroidManifest.xml:122:19
+activity#com.huangyezhaobiao.activity.QBBaseActivity
+ADDED from AndroidManifest.xml:123:9
+	android:name
+		ADDED from AndroidManifest.xml:123:19
+activity#com.huangyezhaobiao.activity.BidFailureActivity
+ADDED from AndroidManifest.xml:124:9
+	android:name
+		ADDED from AndroidManifest.xml:124:19
+activity#com.huangyezhaobiao.activity.BidGoneActivity
+ADDED from AndroidManifest.xml:125:9
+	android:name
+		ADDED from AndroidManifest.xml:125:19
+activity#com.huangyezhaobiao.activity.BidLoadingActivity
+ADDED from AndroidManifest.xml:126:9
+	android:name
+		ADDED from AndroidManifest.xml:126:19
+activity#com.huangyezhaobiao.activity.BidSuccessActivity
+ADDED from AndroidManifest.xml:127:9
+	android:name
+		ADDED from AndroidManifest.xml:127:19
+activity#com.huangyezhaobiao.activity.SplashActivity
+ADDED from AndroidManifest.xml:128:9
+	android:theme
+		ADDED from AndroidManifest.xml:129:13
+	android:name
+		ADDED from AndroidManifest.xml:128:19
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:131:13
+action#android.intent.action.MAIN
+ADDED from AndroidManifest.xml:132:17
+	android:name
+		ADDED from AndroidManifest.xml:132:25
+category#android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:133:17
+	android:name
+		ADDED from AndroidManifest.xml:133:27
+activity#com.huangyezhaobiao.activity.GuideActivity
+ADDED from AndroidManifest.xml:136:9
+	android:name
+		ADDED from AndroidManifest.xml:136:19
+service#com.xiaomi.push.service.XMPushService
+ADDED from AndroidManifest.xml:139:9
+	android:process
+		ADDED from AndroidManifest.xml:142:13
+	android:enabled
+		ADDED from AndroidManifest.xml:141:13
+	android:name
+		ADDED from AndroidManifest.xml:140:13
+service#com.xiaomi.mipush.sdk.PushMessageHandler
+ADDED from AndroidManifest.xml:143:9
+	android:exported
+		ADDED from AndroidManifest.xml:146:13
+	android:enabled
+		ADDED from AndroidManifest.xml:145:13
+	android:name
+		ADDED from AndroidManifest.xml:144:13
+service#com.xiaomi.mipush.sdk.MessageHandleService
+ADDED from AndroidManifest.xml:147:9
+	android:enabled
+		ADDED from AndroidManifest.xml:149:13
+	android:name
+		ADDED from AndroidManifest.xml:148:13
+receiver#com.xiaomi.push.service.receivers.NetworkStatusReceiver
+ADDED from AndroidManifest.xml:151:9
+	android:exported
+		ADDED from AndroidManifest.xml:153:13
+	android:name
+		ADDED from AndroidManifest.xml:152:13
+intent-filter#android.intent.category.DEFAULT+android.net.conn.CONNECTIVITY_CHANGE
+ADDED from AndroidManifest.xml:154:13
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from AndroidManifest.xml:155:17
+	android:name
+		ADDED from AndroidManifest.xml:155:25
+category#android.intent.category.DEFAULT
+ADDED from AndroidManifest.xml:157:17
+	android:name
+		ADDED from AndroidManifest.xml:157:27
+receiver#com.xiaomi.push.service.receivers.PingReceiver
+ADDED from AndroidManifest.xml:160:9
+	android:process
+		ADDED from AndroidManifest.xml:163:13
+	android:exported
+		ADDED from AndroidManifest.xml:162:13
+	android:name
+		ADDED from AndroidManifest.xml:161:13
+intent-filter#com.xiaomi.push.PING_TIMER
+ADDED from AndroidManifest.xml:164:13
+action#com.xiaomi.push.PING_TIMER
+ADDED from AndroidManifest.xml:165:17
+	android:name
+		ADDED from AndroidManifest.xml:165:25
+receiver#com.huangyezhaobiao.push.BiddingMessageReceiver
+ADDED from AndroidManifest.xml:168:9
+	android:exported
+		ADDED from AndroidManifest.xml:170:13
+	android:name
+		ADDED from AndroidManifest.xml:169:13
+intent-filter#com.xiaomi.mipush.RECEIVE_MESSAGE
+ADDED from AndroidManifest.xml:173:13
+action#com.xiaomi.mipush.RECEIVE_MESSAGE
+ADDED from AndroidManifest.xml:174:17
+	android:name
+		ADDED from AndroidManifest.xml:174:25
+intent-filter#com.xiaomi.mipush.MESSAGE_ARRIVED
+ADDED from AndroidManifest.xml:176:13
+action#com.xiaomi.mipush.MESSAGE_ARRIVED
+ADDED from AndroidManifest.xml:177:17
+	android:name
+		ADDED from AndroidManifest.xml:177:25
+intent-filter#com.xiaomi.mipush.ERROR
+ADDED from AndroidManifest.xml:179:13
+action#com.xiaomi.mipush.ERROR
+ADDED from AndroidManifest.xml:180:17
+	android:name
+		ADDED from AndroidManifest.xml:180:25
+activity#com.huangye.commonlib.test.TestActivity
+ADDED from workspaceNewAn:Commonlib:unspecified:16:9
+	android:label
+		ADDED from workspaceNewAn:Commonlib:unspecified:18:13
+	android:name
+		ADDED from workspaceNewAn:Commonlib:unspecified:17:13

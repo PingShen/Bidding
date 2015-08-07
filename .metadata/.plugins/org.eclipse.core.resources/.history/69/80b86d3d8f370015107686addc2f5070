@@ -1,0 +1,61 @@
+package com.huangyezhaobiao.activity;
+
+import com.huangyezhaobiao.R;
+import com.huangyezhaobiao.bean.push.PushBean;
+import com.huangyezhaobiao.enums.TitleBarType;
+
+import android.os.Bundle;
+import android.widget.LinearLayout;
+
+/**
+ * 标的被抢界面
+ * @author linyueyang
+ *
+ */
+public class BidGoneActivity extends QBBaseActivity{
+
+	private LinearLayout back_layout;
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_bid_gone);
+		initView();
+		initListener();
+	}
+	
+	@Override
+	public void initView() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void initListener() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	@Override
+	public void onNotificationCome(PushBean pushBean) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onTitleBarClicked(TitleBarType type) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void NetConnected() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void NetDisConnected() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

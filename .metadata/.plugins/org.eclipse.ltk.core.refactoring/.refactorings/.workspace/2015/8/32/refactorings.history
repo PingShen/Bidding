@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 4 resources" deleteContents="false" description="Delete 4 resources" element1="/Zhaobiao/hs_err_pid1093.log" element2="/Zhaobiao/hs_err_pid1096.log" element3="/Zhaobiao/hs_err_pid1099.log" element4="/Zhaobiao/hs_err_pid1104.log" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="4" stamp="1438763585978"/>
+</session>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/orderpop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#50000000">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="40dp"
+        android:background="@drawable/content_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_orderstate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="正在接收订单‥‥"
+            android:textColor="@color/drakblack"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_orderstate0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="20dp"
+            android:text="不错不错"
+            android:textColor="@color/checkmoresoligthword"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txt_orderstate1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="20dp"
+            android:text="不错不错"
+            android:textColor="@color/checkmoresoligthword"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txt_orderstate2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="20dp"
+            android:text="不错不错"
+            android:textColor="@color/checkmoresoligthword"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txt_orderstate3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="20dp"
+            android:text="不错不错"
+            android:textColor="@color/checkmoresoligthword"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/no_local1111111"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/no_local" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/voise"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/no_local" />
+
+    <ImageView
+        android:id="@+id/cancel"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/no_local" />
+
+</RelativeLayout>

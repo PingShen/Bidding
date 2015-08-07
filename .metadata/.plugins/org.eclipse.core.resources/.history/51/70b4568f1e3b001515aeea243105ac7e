@@ -1,0 +1,50 @@
+package com.huangyezhaobiao.vm;
+
+import java.util.Date;
+import java.util.HashMap;
+
+import com.huangye.commonlib.model.NetWorkModel;
+import com.huangye.commonlib.vm.SourceViewModel;
+import com.huangye.commonlib.vm.callback.NetWorkVMCallBack;
+import com.huangyezhaobiao.model.ValidateModel;
+
+import android.content.Context;
+import android.util.Log;
+
+public class ValidateViewModel extends SourceViewModel {
+
+	public ValidateViewModel(NetWorkVMCallBack callBack, Context context) {
+		super(callBack, context);
+	}
+
+	public void getCode(String userId,String mobile) {
+		
+		t.setRequestMethodPost();
+		HashMap<String, String> params_map = new HashMap<String, String>();
+		//请求API: http://serverdomain/api/sendCode?mobile=&token=&userId=
+		params_map.put("userId", userId);
+		params_map.put("mobile",mobile);
+		params_map.put("token",new Date().getTime()+"");
+		t.configParams(params_map);
+		((ValidateModel) t).getCode();
+	}
+
+	public void validate(String userId,String mobile,String code) {
+		t.setRequestMethodPost();
+		HashMap<String, String> params_map = new HashMap<String, String>();
+		//请求API: //http://serverdomain/api/validate?userId=&mobile=&code=&token=
+		params_map.put("userId", userId);
+		params_map.put("mobile",mobile);
+		params_map.put("code",code);
+		params_map.put("token",new Date().getTime()+"");
+		t.configParams(params_map);
+		((ValidateModel) t).validate();
+	}
+
+	@Override
+	protected NetWorkModel initListNetworkModel(Context context) {
+
+		return new ValidateModel(this, context);
+	}
+
+}

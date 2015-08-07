@@ -1,0 +1,5 @@
+package com.huangyezhaobiao.model;
+
+public class GetCodeModel {
+
+}

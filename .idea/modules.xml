@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Commonlib/Commonlib.iml" filepath="$PROJECT_DIR$/Commonlib/Commonlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Zhaobiao/Zhaobiao.iml" filepath="$PROJECT_DIR$/Zhaobiao/Zhaobiao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smenulibrary/smenulibrary.iml" filepath="$PROJECT_DIR$/smenulibrary/smenulibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/workspaceNewAn.iml" filepath="$PROJECT_DIR$/workspaceNewAn.iml" />
+    </modules>
+  </component>
+</project>

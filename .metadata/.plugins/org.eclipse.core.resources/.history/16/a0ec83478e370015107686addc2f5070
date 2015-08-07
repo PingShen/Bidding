@@ -1,0 +1,83 @@
+package com.huangyezhaobiao.activity;
+
+import com.huangyezhaobiao.R;
+import com.huangyezhaobiao.bean.push.PushBean;
+import com.huangyezhaobiao.enums.TitleBarType;
+import com.huangyezhaobiao.utils.ActivityUtils;
+
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+
+/**
+ * 抢单成功界面
+ * 
+ * @author linyueyang
+ *
+ */
+public class BidSuccessActivity extends QBBaseActivity {
+
+	private Button toOrderList;
+
+	private Button toBidList;
+
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_bid_success);
+		initView();
+		initListener();
+	}
+
+	@Override
+	public void initView() {
+		toOrderList = (Button) findViewById(R.id.success_orderlist);
+		toBidList = (Button) findViewById(R.id.success_bidlist);
+	}
+
+	@Override
+	public void initListener() {
+		toOrderList.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				ActivityUtils.goToActivity(BidSuccessActivity.this, clazz);
+
+			}
+		});
+		toBidList.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				
+
+			}
+		});
+
+	}
+
+	@Override
+	public void onNotificationCome(PushBean pushBean) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onTitleBarClicked(TitleBarType type) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void NetConnected() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void NetDisConnected() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

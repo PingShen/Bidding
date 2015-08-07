@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_no_internet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <RelativeLayout 
+        android:id="@+id/layout_no_internet_click_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+      
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nodata_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:text="没有网络,请点击重新加载..."
+            android:textColor="#dddddd"
+            android:textSize="18sp" />
+        </RelativeLayout>
+</RelativeLayout>

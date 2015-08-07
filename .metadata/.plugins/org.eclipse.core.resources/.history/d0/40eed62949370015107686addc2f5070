@@ -1,0 +1,221 @@
+package com.huangyezhaobiao.activity;
+
+import java.util.List;
+
+import com.huangye.commonlib.vm.callback.NetWorkVMCallBack;
+import com.huangyezhaobiao.R;
+import com.huangyezhaobiao.bean.popdetail.BottomViewBean;
+import com.huangyezhaobiao.bean.popdetail.LogBean;
+import com.huangyezhaobiao.bean.push.PopPassBean;
+import com.huangyezhaobiao.bean.push.PushBean;
+import com.huangyezhaobiao.enums.TitleBarType;
+import com.huangyezhaobiao.inter.MDConstans;
+import com.huangyezhaobiao.utils.MDUtils;
+import com.huangyezhaobiao.view.TitleMessageBarLayout;
+import com.huangyezhaobiao.view.WubaDialog;
+import com.huangyezhaobiao.vm.KnockViewModel;
+import com.huangyezhaobiao.vm.QIangDanDetailViewModel;
+
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+/**
+ * 可抢订单详情页
+ * @author linyueyang
+ *
+ */
+public class OrderDetailActivity extends QBBaseActivity implements NetWorkVMCallBack,OrderDetailCallBack{
+
+	private LinearLayout back_layout;
+	
+	private Button done;
+	private WubaDialog dialog;
+	private LinearLayout linear;//可抢单详情页 用于addview
+	
+	private QIangDanDetailViewModel viewModel;
+	
+	
+	private TextView fee;
+	private PopPassBean popPass;
+	
+	private KnockViewModel knockViewModel;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_orderdetail);
+		initView();
+		initListener();
+		
+		long orderId = 123;
+		
+		viewModel = new QIangDanDetailViewModel(this, this,this,orderId);
+		viewModel.getdata();
+	}
+
+	@Override
+	public void initView() {
+		back_layout = (LinearLayout) this.findViewById(R.id.imgback);
+		done = (Button) this.findViewById(R.id.done);
+		tbl = (TitleMessageBarLayout) findViewById(R.id.tbl);
+		linear = (LinearLayout) findViewById(R.id.llll);
+		fee = (TextView) findViewById(R.id.fee);
+	}
+
+	@Override
+	public void initListener() {
+		back_layout.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				OrderDetailActivity.this.finish();
+			}
+		});
+		done.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				dialog = new WubaDialog.Builder(OrderDetailActivity.this)
+						.setTitle("提示")
+						.setMessage("确认抢单吗")
+						.setPositiveButton("确认",
+								new DialogInterface.OnClickListener() {
+
+									@Override
+									public void onClick(DialogInterface dialog,
+											int which) {
+										//抢单了，要埋点
+										try{
+										knockViewModel = new KnockViewModel(OrderDetailActivity.this, OrderDetailActivity.this);
+										knockViewModel.knock(popPass);
+										}
+										catch(Exception e){
+											
+										}
+										MDUtils.bidDetailsPageMD(OrderDetailActivity.this,"","","","",MDConstans.ACTION_QIANG_DAN);
+									}
+								})
+						.setNegativeButton("取消",
+								new DialogInterface.OnClickListener() {
+
+									@Override
+									public void onClick(DialogInterface dialog,
+											int which) {
+										dialog.dismiss();
+									}
+								}).create();
+				dialog.show();
+				/*
+				 * LayoutInflater inflater = LayoutInflater
+				 * .from(OrderDetailActivity.this); View view =
+				 * inflater.inflate(R.layout.dialog, null); new
+				 * AlertDialog.Builder(OrderDetailActivity.this) .setView(view)
+				 * .setTitle("确认就位吗？")
+				 * .setIcon(android.R.drawable.ic_dialog_info)
+				 * .setPositiveButton("确定", new
+				 * DialogInterface.OnClickListener() {
+				 * 
+				 * @Override public void onClick(DialogInterface dialog, int
+				 * which) {
+				 * 
+				 * } }) .setNegativeButton("返回", new
+				 * DialogInterface.OnClickListener() {
+				 * 
+				 * @Override public void onClick(DialogInterface dialog, int
+				 * which) { // 点击“返回”后的操作,这里不设置没有任何操作 } }).show();
+				 */
+			}
+		});
+	}
+
+	@Override
+	public void onNotificationCome(PushBean pushBean) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onTitleBarClicked(TitleBarType type) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void NetConnected() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void NetDisConnected() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onLoadingStart() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public void onLoadingSuccess(Object t) {
+		if (t instanceof Integer){
+			
+			int status = (Integer) t;
+			
+			if(status==1){
+				Intent intent = new Intent();
+				
+				intent.setClass(OrderDetailActivity.this, BidLoadingActivity.class);
+				
+				startActivity(intent);
+			}
+		}
+		else{
+		
+		//这里把bean返回的List<View> 添加到对应位置的linearlayout里面
+		//当然addView是不能margin和padding的
+		
+		List<View> viewList = (List<View>)t;
+		
+		for(View v:viewList){
+		
+			linear.addView(v);
+		}
+		}
+	}
+
+	@Override
+	public void onLoadingError(String msg) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onLoadingCancel() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onNoInterNetError() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void back(LogBean log, BottomViewBean bottom) {
+		
+		popPass = log.toPopPassBean();
+		
+		fee.setText(bottom.getOriginFee());
+	}
+
+}

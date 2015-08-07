@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#e12f37">
+
+
+     <com.example.segmentcontrol.SegmentControl
+        xmlns:segmentcontrol="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/segment_control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        segmentcontrol:texts="服务|休息"
+        segmentcontrol:colors="#c62930"
+        segmentcontrol:cornerRadius="14dip"
+        segmentcontrol:direction="horizon"
+        segmentcontrol:verticalGap="5dip"
+        segmentcontrol:horizonGap="13dip"
+        segmentcontrol:selectedIndex="1"
+        android:layout_marginTop="10dp"/>
+
+  
+
+</LinearLayout>
